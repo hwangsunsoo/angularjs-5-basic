@@ -1,4 +1,7 @@
+a {
+  color: #000;
+}
 a.active {
-  color: green;
+  color: red;
   font-weight: 600;
 }
