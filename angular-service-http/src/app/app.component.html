@@ -1,6 +1,8 @@
 <h2 *ngIf="isVisible">hello</h2>
 <button (click)="toggle()">toggle</button>
-
+<hr>
+<div>{{ 1234566789012 | date:'yyyy-MM-dd' }}</div>
+<hr>
 <div *ngFor="let user of users">
   <img src="{{ user.avatar_url }}" width="100">&nbsp;
   <span>{{ user.id }}</span> / <span>{{ user.login }}</span>
