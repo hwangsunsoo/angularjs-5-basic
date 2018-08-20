@@ -9,6 +9,7 @@ import { Http } from '@angular/http';
 export class AppComponent {
   title = 'app';
   users = [];
+  isVisible = true;
   constructor(
     @Inject('apiUrl') private apiUrl: string,
     private http: Http
@@ -22,5 +23,9 @@ export class AppComponent {
         this.users = [];
         console.log(error);
       });
+  }
+
+  toggle() {
+    this.isVisible = !this.isVisible;
   }
 }

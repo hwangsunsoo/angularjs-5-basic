@@ -1,3 +1,6 @@
+<h2 *ngIf="isVisible">hello</h2>
+<button (click)="toggle()">toggle</button>
+
 <div *ngFor="let user of users">
   <img src="{{ user.avatar_url }}" width="100">&nbsp;
   <span>{{ user.id }}</span> / <span>{{ user.login }}</span>
